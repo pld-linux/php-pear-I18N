@@ -1,10 +1,10 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		I18N
 %define		_status		beta
-
 %define		_pearname	%{_class}
-Summary:	%{_pearname} - Internationalization package
-Summary(pl):	%{_pearname} - Pakiet wspomagaj±cy umiêdzynarodowienie
+
+Summary:	%{_pearname} - internationalization package
+Summary(pl):	%{_pearname} - pakiet wspomagaj±cy umiêdzynarodowienie
 Name:		php-pear-%{_pearname}
 Version:	0.8.6
 Release:	1
@@ -18,7 +18,7 @@ Requires:	php-pear
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define              _noautoreq      'pear(Translate)'
+%define		_noautoreq	'pear(Translate)'
 
 %description
 This package supports you to localize your applications. Currently
