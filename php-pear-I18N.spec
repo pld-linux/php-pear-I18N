@@ -6,11 +6,11 @@
 Summary:	%{_pearname} - Internationalization package
 Summary(pl):	%{_pearname} -
 Name:		php-pear-%{_pearname}
-Version:	0.8.3
+Version:	0.8.5
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
-# Source0-md5:	9cd7670f5486bcb13848a23065801210
+# Source0-md5:	f0114f9b179847c5abac4af3214376a0
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 URL:		http://pear.php.net/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
