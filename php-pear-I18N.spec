@@ -1,5 +1,6 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		I18N
+%define		_status		beta
 %define		_pearname	%{_class}
 Summary:	%{_pearname} - Internationalization package
 Summary(pl):	%{_pearname} -
@@ -20,10 +21,14 @@ This package supports you to localize your applications. Currently
 multiple ways of supporting translation are implemented and methods to
 determine the current users (browser-)language.
 
+This class has in PEAR status: %{_status}.
+
 %description -l pl
 Ten pakiet pozwoli ci zlokalizowaæ twoje aplikacje. Aktualnie wiele
 sposobów na wspieranie jêzyków jest zaimplementowanych oraz metod do
 okre¶lania jêzyka/przegl±darki aktualnego u¿ytkowanika.
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
@@ -42,5 +47,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc %{_pearname}-%{version}/examples/*
 %dir %{php_pear_dir}/%{_class}
+%dir %{php_pear_dir}/%{_class}/Messages/
 %{php_pear_dir}/%{_class}/*.php
 %{php_pear_dir}/%{_class}/Messages/*.php
