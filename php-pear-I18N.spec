@@ -1,0 +1,46 @@
+%include	/usr/lib/rpm/macros.php
+%define		_class		I18N
+%define		_pearname	%{_class}
+Summary:	%{_pearname} - Internationalization package
+Summary(pl):	%{_pearname} -
+Name:		php-pear-%{_pearname}
+Version:	0.8
+Release:	1
+License:	PHP 2.02
+Group:		Development/Languages/PHP
+Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+URL:		http://pear.php.net/
+BuildRequires:	rpm-php-pearprov >= 4.0.2-98
+Requires:	php-pear
+BuildArch:	noarch
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%description
+This package supports you to localize your applications. Currently
+multiple ways of supporting translation are implemented and methods to
+determine the current users (browser-)language.
+
+%description -l pl
+Ten pakiet pozwoli ci zlokalizowaæ twoje aplikacje. Aktualnie wiele
+sposobów na wspieranie jêzyków jest zaimplementowanych oraz metod do
+okre¶lania jêzyka/przegl±darki aktualnego u¿ytkowanika.
+
+%prep
+%setup -q -c
+
+%install
+rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/Messages
+
+install %{_pearname}-%{version}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
+install %{_pearname}-%{version}/Messages/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/Messages
+
+%clean
+rm -rf $RPM_BUILD_ROOT
+
+%files
+%defattr(644,root,root,755)
+%doc %{_pearname}-%{version}/examples/*
+%dir %{php_pear_dir}/%{_class}
+%{php_pear_dir}/%{_class}/*.php
+%{php_pear_dir}/%{_class}/Messages/*.php
