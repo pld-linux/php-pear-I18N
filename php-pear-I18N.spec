@@ -30,7 +30,7 @@ In PEAR status of this package is: %{_status}.
 %description -l pl
 Ten pakiet pozwoli ci zlokalizowaæ twoje aplikacje. Aktualnie wiele
 sposobów na wspieranie jêzyków jest zaimplementowanych oraz metod do
-okre¶lania jêzyka/przegl±darki aktualnego u¿ytkowanika.
+okre¶lania jêzyka/przegl±darki aktualnego u¿ytkownika.
 
 Ta klasa ma w PEAR status: %{_status}.
 
