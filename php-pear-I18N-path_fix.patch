@@ -1,0 +1,12 @@
+diff -burN php-pear-I18N-0.8.6.orig/I18N-0.8.6/Messages/File.php php-pear-I18N-0.8.6/I18N-0.8.6/Messages/File.php
+--- php-pear-I18N-0.8.6.orig/I18N-0.8.6/Messages/File.php	2004-12-04 23:10:19.815721080 +0100
++++ php-pear-I18N-0.8.6/I18N-0.8.6/Messages/File.php	2004-12-04 23:10:38.494881416 +0100
+@@ -19,7 +19,7 @@
+ //
+ //  $Id:
+ //
+-require_once 'Common.php';
++require_once 'I18N/Messages/Common.php';
+ 
+ /**
+ * Get message, and charset from php file, and return corresponding message
