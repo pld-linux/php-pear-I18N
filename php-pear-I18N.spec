@@ -4,7 +4,7 @@
 %define		_pearname	%{_class}
 
 Summary:	%{_pearname} - internationalization package
-Summary(pl):	%{_pearname} - pakiet wspomagaj±cy umiêdzynarodowienie
+Summary(pl.UTF-8):   %{_pearname} - pakiet wspomagajÄ…cy umiÄ™dzynarodowienie
 Name:		php-pear-%{_pearname}
 Version:	0.8.6
 Release:	5
@@ -30,10 +30,10 @@ determine the current users (browser-)language.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Ten pakiet pozwoli ci zlokalizowaæ twoje aplikacje. Aktualnie wiele
-sposobów na wspieranie jêzyków jest zaimplementowanych oraz metod do
-okre¶lania jêzyka/przegl±darki aktualnego u¿ytkownika.
+%description -l pl.UTF-8
+Ten pakiet pozwoli ci zlokalizowaÄ‡ twoje aplikacje. Aktualnie wiele
+sposobÃ³w na wspieranie jÄ™zykÃ³w jest zaimplementowanych oraz metod do
+okreÅ›lania jÄ™zyka/przeglÄ…darki aktualnego uÅ¼ytkownika.
 
 Ta klasa ma w PEAR status: %{_status}.
 
