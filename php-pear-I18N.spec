@@ -4,7 +4,7 @@
 %define		_pearname	%{_class}
 
 Summary:	%{_pearname} - internationalization package
-Summary(pl.UTF-8):   %{_pearname} - pakiet wspomagający umiędzynarodowienie
+Summary(pl.UTF-8):	%{_pearname} - pakiet wspomagający umiędzynarodowienie
 Name:		php-pear-%{_pearname}
 Version:	0.8.6
 Release:	5
