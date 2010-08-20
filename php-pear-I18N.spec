@@ -6,12 +6,12 @@
 Summary:	%{_pearname} - internationalization package
 Summary(pl.UTF-8):	%{_pearname} - pakiet wspomagający umiędzynarodowienie
 Name:		php-pear-%{_pearname}
-Version:	0.8.6
-Release:	7
+Version:	1.0.0
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	8cc7870da2844ac08abf7e6a77685054
+# Source0-md5:	d8a108080fa2c871a0750ca6139b5028
 Patch0:		%{name}-path_fix.patch
 URL:		http://pear.php.net/package/I18N/
 BuildRequires:	php-pear-PEAR
