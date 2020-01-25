@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.php
 %define		_class		I18N
 %define		_status		stable
 %define		_pearname	%{_class}
